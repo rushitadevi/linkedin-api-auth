@@ -23,3 +23,8 @@ mongoose.connect("mongodb+srv://diegostriveschool:h6nxg5U9SDcsLA26@cluster0-3ar0
   })
 ).catch(err => console.log(err))
 
+server.get("/", (req, res) => {
+  res.send("Hello")
+})
+
+
